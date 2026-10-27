@@ -16,6 +16,8 @@ spec:
     namespace: nginx-demo
 
   syncPolicy:
+    automated:
+      prune: true
     syncOptions:
       - CreateNamespace=true
       - PruneLast=true
