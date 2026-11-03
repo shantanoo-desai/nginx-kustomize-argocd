@@ -15,8 +15,4 @@ spec:
     server: https://kubernetes.default.svc
     namespace: nginx-demo
 
-  syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
-      - PruneLast=true
-      - PrunePropagationPolicy=foreground
+  syncPolicy: {}
